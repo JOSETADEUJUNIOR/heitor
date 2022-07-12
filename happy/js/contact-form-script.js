@@ -11,39 +11,45 @@ $("#contactForm").validator().on("submit", function (event) {
 });
 
 
-function submitForm(){
+function submitForm() {
     // Initiate Variables With Form Content
     var name = $("#key").val();
-    console.log(name);
-
     $.ajax({
         type: "POST",
         url: "php/form-process.php",
         data: "name=" + name,
-        success : function(text){
-            if (text == "success"){
+        success: function (text) {
+            if (text == 1) {
                 formSuccess();
+            } else if (text == 1) {
+                formValidado();
+
             } else {
                 formError();
-                submitMSG(false,text);
+                submitMSG(false, text);
             }
         }
     });
 }
 
-function formSuccess(){
+function formSuccess() {
     $("#contactForm")[0].reset();
-    submitMSG(true, "Message Submitted!")
+    submitMSG(true, "Presença Confirmada!")
 }
 
-function formError(){
-    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+function formValidado() {
+    $("#contactForm")[0].reset();
+    submitMSG(true, "Cupom já validado!")
+}
+
+function formError() {
+    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
         $(this).removeClass();
     });
 }
 
-function submitMSG(valid, msg){
-    if(valid){
+function submitMSG(valid, msg) {
+    if (valid) {
         var msgClasses = "h3 text-center tada animated text-success";
     } else {
         var msgClasses = "h3 text-center text-danger";

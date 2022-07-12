@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
  
      <!-- Site Metas -->
-    <title>Christmas - Responsive HTML5 Template</title>  
+	 <img src="images/logo_heitor.png">
+    <title>Heitor 2 Aninhos, #EUVOU</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -58,7 +59,6 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
                         <li><a class="nav-link active" href="#home">Home</a></li>
-                        <li><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -159,20 +159,15 @@
 									<p>23/07/2022 - às 13H</p>
 								</div>
 							</div>
-							<div class="media cont-line">
-								<div class="media-left icon-b">
-									<i class="fa fa-volume-control-phone" aria-hidden="true"></i>
-								</div>
-								
-							</div>
+							
 						</div>
 					</div>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14654.191049237752!2d-51.1829156!3d-23.3321616!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1a75f6b05b57316a!2sCondom%C3%ADnio%20Liberty%20Torres!5e0!3m2!1spt-BR!2sbr!4v1657413843694!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					
 	
 				</div>
 			</div>
 		</div>
-
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14654.191049237752!2d-51.1829156!3d-23.3321616!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1a75f6b05b57316a!2sCondom%C3%ADnio%20Liberty%20Torres!5e0!3m2!1spt-BR!2sbr!4v1657413843694!5m2!1spt-BR!2sbr" width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 	</div>
 	<!-- contact -->
